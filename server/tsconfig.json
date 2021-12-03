@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /**
+     * Must allow:
+     */
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "noUnusedParameters": false,
+    "removeComments": false,
+    "incremental": true,
+    "preserveConstEnums": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES2018",
+    "lib": ["es2015", "dom"],
+    "baseUrl": ".",
+    "strict": true,
+    "declaration": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "stripInternal": true,
+    "outDir": "./dist"
+  },
+  "exclude": ["node_modules/", "**/*.spec.ts"],
+  "include": ["src/", "lib/", "bin/"]
+}
