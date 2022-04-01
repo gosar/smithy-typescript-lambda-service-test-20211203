@@ -30,11 +30,9 @@ export class CdkStack extends Stack {
         [operation]: new NodejsFunction(this, operation + "Function", {
           entry: path.join(__dirname, `../src/${entry_points[operation]}.ts`),
           handler: "lambdaHandler",
-          depsLockFilePath: path.join(__dirname, "../../yarn.lock"),
           bundling: {
             minify: true,
             tsconfig: path.join(__dirname, "../tsconfig.json"),
-            forceDockerBundling: true,
             // re2-wasm is used by the SSDK common library to do pattern validation, and uses
             // a WASM module, so it's excluded from the bundle
             nodeModules: ["re2-wasm"],

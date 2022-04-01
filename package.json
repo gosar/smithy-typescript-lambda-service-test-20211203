@@ -13,6 +13,7 @@
     "build": "yarn build:model && yarn build:client && yarn build:server"
   },
   "devDependencies": {
+    "esbuild": "^0.14.27",
     "rimraf": "^3.0.0"
   },
   "workspaces": [

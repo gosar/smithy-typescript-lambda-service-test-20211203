@@ -16,7 +16,6 @@ This repository is divided into three projects:
 [JDK](https://aws.amazon.com/corretto/) >= 8, 
 [NodeJS](https://nodejs.org/en/download/) >= 14, 
 [Yarn](https://yarnpkg.com/getting-started/install) >= 2, and
-[Docker](https://docs.docker.com/get-docker/) should be installed before you begin, and you should have an AWS account 
 [set up for the CDK](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_prerequisites).
 
 ## Getting started
